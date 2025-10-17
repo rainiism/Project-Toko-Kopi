@@ -1,0 +1,1 @@
+<?php require 'config.php'; $id=(int)($_GET['id']??0); $pdo->prepare('DELETE FROM pembeli WHERE id_pembeli=?')->execute([$id]); header('Location:pembeli_list.php'); exit; ?>
