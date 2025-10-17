@@ -1,0 +1,166 @@
+/* =========================
+   TOKO KOPI STYLE
+   Palette:
+   - Kyoto Dusk (#5B5F8D)
+   - Matcha Cream (#9BB29E)
+   - Roasted Terracotta (#DA6B51)
+   - Vanilla Foam (#F1DCBA)
+   - Charcoal Brew (#484149)
+   Font: Gill Sans, sans-serif
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #F1DCBA; /* Vanilla Foam */
+  color: #484149; /* Charcoal Brew */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(72, 65, 73, 0.2);
+  padding: 40px;
+}
+
+/* Judul halaman */
+h2 {
+  color: #5B5F8D; /* Kyoto Dusk */
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #484149;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #9BB29E;
+  border-radius: 8px;
+  background-color: #F9F6EF;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #5B5F8D;
+  box-shadow: 0 0 4px #5B5F8D55;
+}
+
+/* Tombol utama */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #DA6B51; /* Roasted Terracotta */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c15e46;
+}
+
+.btn-secondary {
+  background-color: #5B5F8D;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #48478d;
+}
+
+/* Tabel data */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(72, 65, 73, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #9BB29E; /* Matcha Cream */
+  color: #484149;
+}
+
+tr:nth-child(even) {
+  background-color: #F9F6EF;
+}
+
+tr:hover {
+  background-color: #F1DCBA33;
+}
+
+/* Pesan error */
+p[style*="color:red"] {
+  background-color: #FFE0DB;
+  border-left: 4px solid #DA6B51;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Link kembali */
+a {
+  color: #5B5F8D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header / Navbar opsional */
+.navbar {
+  background-color: #5B5F8D;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.navbar a {
+  color: #F1DCBA;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #FFFFFF;
+}
